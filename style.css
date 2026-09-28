@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f8d18b;
+    color: #5d4325;
+    font-family: Georgia, serif;
+}
+
+.container {
+    width: 1080px;
+    margin: auto;
+}
+
+header {
+    height: 120px;
+    position: relative;
+    border-bottom: 1px solid #d5a75d;
+}
+
+.top-left {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15px;
+    font-size: 70px;
+    font-weight: bold;
+    color: #250000;
+}
+
+.top-right {
+    position: absolute;
+    right: 0;
+    top: 35px;
+    width: 270px;
+}
+
+.top-right i {
+    display: block;
+    margin-bottom: 18px;
+}
+
+.search {
+    display: flex;
+}
+
+.search input {
+    width: 190px;
+    padding: 7px;
+    border: 1px solid #ccc;
+}
+
+.search button {
+    background: #23913c;
+    color: white;
+    border: 1px solid #167329;
+    padding: 5px 15px;
+}
+
+.main {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+aside {
+    width: 220px;
+    flex-shrink: 0;
+}
+
+nav a {
+    display: block;
+    background: #390000;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    padding: 20px 0;
+    margin-bottom: 8px;
+    border: 5px solid #a96d16;
+}
+
+.connect {
+    background: #fff0bd;
+    margin-top: 15px;
+}
+
+.connect h3,
+.placeholder h3 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    background: #d99c2d;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 22px;
+}
+
+.placeholder {
+    background: #f5c66d;
+    margin-top: 25px;
+    padding-bottom: 15px;
+}
+
+.placeholder h4,
+.placeholder p,
+.placeholder a {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.placeholder p {
+    line-height: 1.6;
+}
+
+.placeholder a {
+    color: green;
+}
+
+.placeholder button {
+    display: block;
+    width: 80%;
+    margin: 15px auto 0;
+    padding: 10px;
+    background: linear-gradient(#5ee36c, #159a32);
+    border: 1px solid #08771b;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main {
+    background: #fffdf5;
+    width: 100%;
+    padding: 10px 35px 40px;
+    min-height: 850px;
+}
+
+main h1 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+main > p {
+    margin-bottom: 30px;
+}
+
+fieldset {
+    border: 1px solid #aaa;
+    margin-bottom: 8px;
+    padding: 12px 10px 18px;
+}
+
+legend {
+    padding: 0 4px;
+}
+
+label {
+    display: block;
+    margin: 8px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    width: 140px;
+    padding: 5px;
+    border: 1px solid #999;
+    font-family: inherit;
+}
+
+textarea {
+    width: 250px;
+    height: 70px;
+    resize: none;
+}
+
+.gender,
+.checkbox-group {
+    display: flex;
+    gap: 8px;
+}
+
+.gender label,
+.checkbox-group label,
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.buttons button {
+    background: linear-gradient(#70dc7a, #159632);
+    color: white;
+    border: 1px solid #08751b;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 20px;
+    padding-top: 30px;
+}
+
+.footer-items {
+    display: flex;
+    gap: 40px;
+    border-bottom: 4px solid #d7a956;
+    padding-bottom: 35px;
+}
+
+.footer-items > div {
+    flex: 1;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+    margin: auto;
+    border-radius: 50%;
+    background: #9c681f;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 25px;
+    color: #b58a4a;
+}
