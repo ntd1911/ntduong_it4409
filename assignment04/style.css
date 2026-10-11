@@ -1,0 +1,282 @@
+/* =========================================
+   1. RESET & BIẾN MẶC ĐỊNH
+   ========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    /* Có thể sử dụng background image từ thư mục images nếu muốn */
+    /* background-image: url('./images/bg-body.png'); */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   2. HEADER & ĐIỀU HƯỚNG
+   ========================================= */
+.site-header {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 5px solid #d4af37;
+}
+
+.site-name {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    font-style: italic;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #d4af37;
+}
+
+/* =========================================
+   3. BỐ CỤC CHÍNH (LAYOUT CƠ BẢN)
+   ========================================= */
+.layout {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    gap: 30px;
+}
+
+main {
+    flex: 1 1 65%;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.sidebar {
+    flex: 1 1 30%;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    align-self: flex-start;
+}
+
+/* =========================================
+   4. NỘI DUNG CÁC SECTION
+   ========================================= */
+section, article {
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Grid cho các danh sách (Giá trị cốt lõi, Đội ngũ) */
+.value-list, .team-list {
+    list-style: none;
+    display: grid;
+    gap: 20px;
+}
+
+.value-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.value-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #d4af37;
+}
+
+.team-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    text-align: center;
+}
+
+.team-list .member h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #1a1a1a;
+}
+
+.team-list .member p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* =========================================
+   5. FORM LIÊN HỆ
+   ========================================= */
+.contact-form label {
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.contact-form button {
+    background-color: #1a1a1a;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #d4af37;
+}
+
+/* =========================================
+   6. SIDEBAR
+   ========================================= */
+.sidebar h2 {
+    font-size: 1.5rem;
+}
+
+.recent {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.recent li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.recent a {
+    color: #333;
+    text-decoration: none;
+}
+
+.recent a:hover {
+    color: #d4af37;
+}
+
+/* =========================================
+   7. FOOTER
+   ========================================= */
+.site-footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 50px 20px 20px;
+    margin-top: 40px;
+}
+
+.footer-cols {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-cols h3 {
+    color: #d4af37;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.footer-cols p {
+    color: #cccccc;
+    font-size: 0.9rem;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    color: #888;
+}
+
+/* =========================================
+   8. MEDIA QUERIES (Responsive)
+   ========================================= */
+
+/* Tablet & Mobile (Dưới 992px) */
+@media (max-width: 992px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    main, .sidebar {
+        flex: 1 1 100%;
+    }
+}
+
+/* Mobile nhỏ (Dưới 600px) */
+@media (max-width: 600px) {
+    .site-name {
+        font-size: 2rem;
+    }
+    
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .main-nav li {
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        padding-bottom: 5px;
+    }
+}
